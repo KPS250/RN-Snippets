@@ -1,0 +1,58 @@
+{
+  "Style": {
+    "prefix": "st",
+    "body": [
+      "import { StyleSheet } from 'react-native';",
+      "import { scale } from '../../../utils/helper';",
+      "",
+      "export const styles = (theme?: any) =>",
+      "  StyleSheet.create({",
+      "    container: {",
+      "      backgroundColor: theme.colors.PRIMARY[400],",
+      "    },",
+      "    text: {",
+      "      ...theme.fonts.semibold,",
+      "      ...theme.style.heading.h6,",
+      "      color: theme.colors.SHADES.WHITE_00,",
+      "      marginTop: scale(10),",
+      "    },",
+      "  });",
+      ""
+    ],
+    "description": "Style"
+  },
+  "Redux Toolkit-Slice": {
+    "prefix": "sl",
+    "body": [
+      "import { createSlice, PayloadAction } from '@reduxjs/toolkit';",
+      "",
+      "type [Custom]State = {",
+      "  mobileNumber: string;",
+      "};",
+      "",
+      "const initialState: [Custom]State = {",
+      "  mobileNumber: '',",
+      "};",
+      "",
+      "export const $0 = createSlice({",
+      "  name: 'user',",
+      "",
+      "  initialState,",
+      "  reducers: {",
+      "    setUserMobile: (state, action: PayloadAction<any>) => {",
+      "      state.mobileNumber = action.payload;",
+      "    },",
+      "    resetUserMobile: (state) => {",
+      "      state.mobileNumber = '';",
+      "    },",
+      "  },",
+      "});",
+      "",
+      "export const { setUserMobile, resetUserMobile } = $0.actions;",
+      "",
+      "export default $0.reducer;",
+      ""
+    ],
+    "description": "Redux Toolkit-Slice"
+  }
+}

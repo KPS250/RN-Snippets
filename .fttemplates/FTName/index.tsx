@@ -1,12 +1,11 @@
-import React, { useContext } from 'react';
-import { View, Text } from 'react-native';
-import { styles as defaultStyle } from './styles';
-import { SdkContext, SdkContextType } from '../../../provider/SdkProvider';
-import { useAppSelector } from '../../../redux/hooks';
+import React, { useContext } from "react";
+import { View, Text } from "react-native";
+import { styles as defaultStyle } from "./styles";
+import { SdkContext, SdkContextType } from "../../../provider/SdkProvider";
+import { useAppSelector } from "../../../redux/hooks";
 
 type PropTypes = {
   style?: StyleMedia;
-  theme?: any;
 };
 
 const [FTName] = (props: PropTypes) => {
